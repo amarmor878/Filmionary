@@ -43,15 +43,6 @@ export const PostImgTituloEje = styled.div`
   span {
     margin-left: 3rem;
   }
-
-  @media (max-width: 375px) {
-    font-size: 0.8rem;
-
-    span {
-      margin-left: 1rem;
-      font-size: 1rem;
-    }
-  }
 `;
 
 export const PostImgDescrip = styled.div`

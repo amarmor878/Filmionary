@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { AiOutlineStar } from 'react-icons/ai'
 import { Carousel } from 'react-responsive-carousel'
 import { Link } from "react-router-dom";
 
@@ -35,8 +36,8 @@ export const Principal = () => {
                                 <PostImgTituloEje>
                                     {peli ? peli.release_date : ""}
                                     <span>
+                                        <AiOutlineStar style={{ margin: '0px 5px', marginBottom: '-4px' }} />
                                         {peli ? peli.vote_average : ""}
-                                        <i className="fas fa-star" />{" "}
                                     </span>
                                 </PostImgTituloEje>
                                 <PostImgDescrip>{peli ? peli.overview : ""}</PostImgDescrip>

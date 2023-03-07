@@ -52,3 +52,49 @@ export const EnlCabecera = styled.a`
     color: #049b97;
   }
 `;
+
+export const BuscarInput = styled.input`
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  padding: 0 10px;
+  font-size: 1.2rem;
+  outline: none;
+
+  @media (max-width: 725px) {
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    padding: 0 10px;
+    font-size: 1rem;
+    outline: none;
+  }
+`;
+
+export const BuscarBoton = styled.button`
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: #049b97;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  outline: none;
+  margin-left: 10px;
+
+  @media (max-width: 725px) {
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    background-color: #049b97;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    margin-left: 10px;
+  }
+`;

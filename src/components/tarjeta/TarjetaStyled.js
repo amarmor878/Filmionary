@@ -64,3 +64,4 @@ export const TarjDescrip = styled.div`
   font-size: 0.75rem;
   margin-bottom: 0.2rem;
 `;
+

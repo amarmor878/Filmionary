@@ -10,7 +10,8 @@ export const ListaPeliTitulo = styled.h2`
 `;
 
 export const ListaPeliTarj = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 1rem;
+  margin: 0 1rem 1rem 1rem;
 `;

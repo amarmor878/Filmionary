@@ -26,7 +26,16 @@ export const Principal = () => {
 
     return (
         <div>
-            <Carousel>
+            <Carousel
+                showThumbs={false}
+                showStatus={false}
+                infiniteLoop={true}
+                autoPlay={true}
+                interval={5000}
+                transitionTime={1000}
+                stopOnHover={true}
+                showArrows={true}
+            >
                 {
                     pelisPopulares.map(peli => (
                         <Link style={{ textDecoration: "none", color: "white" }} to={`/pelicula/${peli.id}`} >

@@ -1,9 +1,9 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Cabecera from "./components/cabecera/Cabecera";
-import Principal from "./pages/principal/Principal"
-import Pelicula from "./pages/detalles/Pelicula"
-import ListaPeliculas from "./components/listaPeliculas/ListaPeliculas.jsx"
+import Principal from "./pages/principal/Principal";
+import Pelicula from "./pages/detalles/Pelicula";
+import ListaPeliculas from "./components/listaPeliculas/ListaPeliculas.jsx";
 
 function App() {
   return (

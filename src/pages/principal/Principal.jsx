@@ -1,19 +1,27 @@
-import React, { useEffect, useState } from 'react'
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { AiOutlineStar } from 'react-icons/ai'
-import { Carousel } from 'react-responsive-carousel'
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 import { Link } from "react-router-dom";
 
 import { PrinPostImg, PrinPostImgOver, PostImgTitulo, PostImgTituloEje, PostImgDescrip } from './PrincipalStyled'
+import { AiOutlineStar } from 'react-icons/ai';
 
 export const Principal = () => {
     const [pelisPopulares, setPelisPopulares] = useState([]);
 
     useEffect(() => {
-        fetch("https://api.themoviedb.org/3/movie/popular?api_key=4e44d9029b1270a757cddc766a1bcb63&language=es-ES")
-            .then(res => res.json())
-            .then(data => setPelisPopulares(data.results))
-    }, [])
+        axios.get("https://api.themoviedb.org/3/movie/popular?api_key=4e44d9029b1270a757cddc766a1bcb63&language=es-ES")
+            .then(response => {
+                if (response && response.data && response.data.results) {
+                    setPelisPopulares(response.data.results);
+                    console.log(response.data.results);
+                } else {
+                    console.log("Error: Respuesta inválida");
+                }
+            })
+            .catch(error => console.log(error))
+    }, []);
 
     return (
         <div>
@@ -29,7 +37,7 @@ export const Principal = () => {
                     pelisPopulares.map(peli => (
                         <Link style={{ textDecoration: "none", color: "white" }} to={`/pelicula/${peli.id}`} >
                             <PrinPostImg>
-                                <img src={`https://image.tmdb.org/t/p/original${peli.poster_path}`} alt={peli.original_title} />
+                                <img src={`https://image.tmdb.org/t/p/original${peli.backdrop_path}`} alt={peli.original_title} />
                             </PrinPostImg>
                             <PrinPostImgOver>
                                 <PostImgTitulo>{peli ? peli.original_title : ""}</PostImgTitulo>
@@ -50,4 +58,5 @@ export const Principal = () => {
     )
 }
 
-export default Principal
+
+export default Principal;

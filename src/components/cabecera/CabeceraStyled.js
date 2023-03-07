@@ -21,7 +21,6 @@ export const DerCabecera = styled.div`
 export const IconCabecera = styled.img`
   width: 180px;
   cursor: pointer;
-  src: local();
 `;
 
 export const EnlCabecera = styled.a`

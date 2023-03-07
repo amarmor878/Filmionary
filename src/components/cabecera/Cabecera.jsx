@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 import { MainCabecera, IzqCabecera, IconCabecera, EnlCabecera } from './CabeceraStyled'
 
-
 export const Cabecera = () => {
     return (
         <MainCabecera>

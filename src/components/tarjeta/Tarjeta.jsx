@@ -34,7 +34,7 @@ export const Tarjeta = ({ peli }) => {
                                     <TarjPuntu>{peli ? peli.vote_average : ""}</TarjPuntu>
                                 </TarjEje>
                                 <TarjDescrip>
-                                    {peli ? peli.overview.slice(0, 118) + "..." : ""}
+                                    {peli ? peli.overview.slice(0, 100) + "..." : ""}
                                 </TarjDescrip>
                             </TarjOver>
                         </TarjPrin>

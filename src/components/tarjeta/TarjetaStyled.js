@@ -35,9 +35,9 @@ export const TarjOver = styled.div`
   height: 290%;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
-  padding: 0rem 0.5rem 0.5rem 0.5rem;
+  padding: 0rem 1rem 1rem 1rem;
   bottom: 0px;
-  background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 1));
+  background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 0.5));
 
   &:hover {
     opacity: 1;

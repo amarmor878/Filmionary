@@ -51,7 +51,7 @@ export const Principal = () => {
                                         {peli ? peli.vote_average : ""}
                                     </span>
                                 </PostImgTituloEje>
-                                <PostImgDescrip>{peli ? peli.overview : ""}</PostImgDescrip>
+                                <PostImgDescrip>{peli ? peli.overview.slice(0, 250) + "..." : ""}</PostImgDescrip>
                             </PrinPostImgOver>
                         </Link>
                     ))

@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 import { PrinPostImg, PrinPostImgOver, PostImgTitulo, PostImgTituloEje, PostImgDescrip } from './PrincipalStyled'
 import { AiOutlineStar } from 'react-icons/ai';
+import ListaPeliculas from '../../components/listaPeliculas/ListaPeliculas';
 
 export const Principal = () => {
     const [pelisPopulares, setPelisPopulares] = useState([]);
@@ -25,22 +26,15 @@ export const Principal = () => {
 
     return (
         <div>
-            <Carousel
-                showThumbs={false}
-                showStatus={false}
-                infiniteLoop={true}
-                autoPlay={true}
-                interval={5000}
-                transitionTime={1000}
-            >
+            <Carousel>
                 {
                     pelisPopulares.map(peli => (
                         <Link style={{ textDecoration: "none", color: "white" }} to={`/pelicula/${peli.id}`} >
                             <PrinPostImg>
-                                <img src={`https://image.tmdb.org/t/p/original${peli.backdrop_path}`} alt={peli.original_title} />
+                                <img src={`https://image.tmdb.org/t/p/original${peli.backdrop_path}`} alt={peli.title} />
                             </PrinPostImg>
                             <PrinPostImgOver>
-                                <PostImgTitulo>{peli ? peli.original_title : ""}</PostImgTitulo>
+                                <PostImgTitulo>{peli ? peli.title : ""}</PostImgTitulo>
                                 <PostImgTituloEje>
                                     {peli ? peli.release_date : ""}
                                     <span>
@@ -54,6 +48,7 @@ export const Principal = () => {
                     ))
                 }
             </Carousel>
+            <ListaPeliculas />
         </div>
     )
 }

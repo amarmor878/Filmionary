@@ -50,7 +50,7 @@ export const TarjTitulo = styled.div`
   margin-bottom: 0.4rem;
 `;
 
-export const TarjTituloEje = styled.div`
+export const TarjEje = styled.div`
   font-size: 0.75rem;
   margin-bottom: 0.25rem;
 `;

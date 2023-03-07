@@ -5,12 +5,12 @@ export const ListaPeliMain = styled.div`
 `;
 
 export const ListaPeliTitulo = styled.h2`
-  font-size: 2rem;
+  font-size: 1.75rem;
   margin: 2.5rem;
 `;
 
 export const ListaPeliTarj = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 `;

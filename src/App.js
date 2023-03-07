@@ -12,7 +12,7 @@ function App() {
         <Cabecera />
         <Routes>
           <Route index element={<Principal />}></Route>
-          <Route path="pelicula/:id" element={<Pelicula />}></Route>
+          <Route path="pelicula/:id" element={<h1>Detalles de la pelicula</h1>}></Route>
           <Route path="peliculas/:type" element={<ListaPeliculas />}></Route>
           <Route path="/*" element={<h1>Error 404</h1>}></Route>
         </Routes>

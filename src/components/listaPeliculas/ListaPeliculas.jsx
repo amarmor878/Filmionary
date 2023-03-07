@@ -28,7 +28,7 @@ export const ListaPeliculas = () => {
     <div>
       <ListaPeliMain>
         <ListaPeliTitulo>
-          {(tipo ? tipo : "POPULAR").toUpperCase()}
+          {(tipo ? tipo : "POPULARES").toUpperCase()}
         </ListaPeliTitulo>
         <ListaPeliTarj>
           {

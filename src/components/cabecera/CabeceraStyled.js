@@ -53,48 +53,52 @@ export const EnlCabecera = styled.a`
   }
 `;
 
-export const BuscarInput = styled.input`
-  width: 300px;
-  height: 30px;
-  border-radius: 5px;
+export const BusquedaCabecera = styled.div`
+  margin-left: auto;
+`;
+
+export const InputBusqueda = styled.input`
+  padding: 5px;
   border: none;
-  padding: 0 10px;
-  font-size: 1.2rem;
+  border-radius: 5px;
   outline: none;
 
   @media (max-width: 725px) {
-    width: 200px;
-    height: 25px;
-    border-radius: 5px;
+    padding: 5px;
     border: none;
-    padding: 0 10px;
-    font-size: 1rem;
+    border-radius: 5px;
     outline: none;
+    width: 100px;
+  }
+
+  @media (max-width: 660px) {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 50px;
   }
 `;
 
-export const BuscarBoton = styled.button`
-  width: 100px;
-  height: 30px;
-  border-radius: 5px;
+export const ButtonBusqueda = styled.button`
+  padding: 5px;
   border: none;
+  border-radius: 5px;
+  outline: none;
+  margin-left: 5px;
+  cursor: pointer;
   background-color: #049b97;
   color: white;
-  font-size: 1.2rem;
-  cursor: pointer;
-  outline: none;
-  margin-left: 10px;
 
   @media (max-width: 725px) {
-    width: 100px;
-    height: 25px;
-    border-radius: 5px;
+    padding: 5px;
     border: none;
+    border-radius: 5px;
+    outline: none;
+    margin-left: 5px;
+    cursor: pointer;
     background-color: #049b97;
     color: white;
-    font-size: 1rem;
-    cursor: pointer;
-    outline: none;
-    margin-left: 10px;
+    width: 100px;
   }
 `;

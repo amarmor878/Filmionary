@@ -19,7 +19,7 @@ Filmionary también permite a los usuarios crear una lista de favoritos y ver lo
 
 ## Despliegue de la app
 
-La aplicación se encuentra desplegada en Amazon Web Services y se puede acceder a ella a través del siguiente enlace: [Filmionary](https://master.dqyldpe3e1z95.amplifyapp.com/)
+La aplicación se encuentra desplegada en Amazon Web Services y se puede acceder a ella a través del siguiente enlace: <a href="https://master.dqyldpe3e1z95.amplifyapp.com/" target="_blank">Filmionary</a>
 
 ## Tecnologías utilizadas
 

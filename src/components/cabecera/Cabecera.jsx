@@ -1,27 +1,30 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { MainCabecera, IzqCabecera, IconCabecera, EnlCabecera } from './CabeceraStyled';
 
-import { MainCabecera, IzqCabecera, IconCabecera, EnlCabecera } from './CabeceraStyled'
+const opcionesCabecera = [
+    { enlace: '/', texto: 'Inicio', imagen: 'https://user-images.githubusercontent.com/100948149/223397968-e31acedc-1e85-4806-a531-7a66cacb13de.png' },
+    { enlace: '/peliculas/popular', texto: 'Popular' },
+    { enlace: '/peliculas/top_rated', texto: 'Mejor Valorado' },
+    { enlace: '/peliculas/upcoming', texto: 'Estreno' },
+];
 
-export const Cabecera = () => {
-    return (
-        <MainCabecera>
-            <IzqCabecera>
-                <Link to='/'>
-                    <IconCabecera src='https://user-images.githubusercontent.com/100948149/223397968-e31acedc-1e85-4806-a531-7a66cacb13de.png' />
+const Cabecera = () => (
+    <MainCabecera>
+        <IzqCabecera>
+            {opcionesCabecera.map(({ enlace, texto, imagen }) => (
+                <Link key={enlace} to={enlace} style={{ textDecoration: 'none' }}>
+                    {imagen ? (
+                        <IconCabecera src={imagen} />
+                    ) : (
+                        <EnlCabecera>
+                            <span>{texto}</span>
+                        </EnlCabecera>
+                    )}
                 </Link>
-                <Link to='/peliculas/popular' style={{ textDecoration: 'none' }}>
-                    <EnlCabecera><span>Popular</span></EnlCabecera>
-                </Link>
-                <Link to='/peliculas/top_rated' style={{ textDecoration: 'none' }}>
-                    <EnlCabecera><span>Mejor Valorado</span></EnlCabecera>
-                </Link>
-                <Link to='/peliculas/upcoming' style={{ textDecoration: 'none' }}>
-                    <EnlCabecera><span>Estreno</span></EnlCabecera>
-                </Link>
-            </IzqCabecera>
-        </MainCabecera>
-    )
-}
+            ))}
+        </IzqCabecera>
+    </MainCabecera>
+);
 
-export default Cabecera
+export default Cabecera;

@@ -13,9 +13,11 @@ import {
 } from './PeliculaStyled'
 
 export const Pelicula = () => {
+    // state que controla los detalles de la pelicula cargada
     const [detallePelicula, setDetallePelicula] = useState();
     const { id } = useParams();
 
+    // define una función de obtener datos que se puede volver a utilizar
     const getData = useCallback(() => {
         axios.get(`https://api.themoviedb.org/3/movie/${id}?api_key=4e44d9029b1270a757cddc766a1bcb63&language=es-ES`)
             .then(response => {

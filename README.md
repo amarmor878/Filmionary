@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Filmionary
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Logo de Filmionary](https://user-images.githubusercontent.com/100948149/223397968-e31acedc-1e85-4806-a531-7a66cacb13de.png)
 
-## Available Scripts
+## Índice
+1. ¿Qué es Filmionary?
+2. Despliegue de la app
+3. Tecnologías utilizadas
+4. Cómo utilizar Purrfect Planner
+5. Capturas de la App
+6. Bibliografía
+7. Derechos de autor
 
-In the project directory, you can run:
+## ¿Qué es Filmionary?
 
-### `npm start`
+Filmionary es una aplicación web que permite a los usuarios buscar información sobre películas y series de televisión. La aplicación utiliza la API de The Movie DB para obtener información actualizada sobre las películas y series de televisión.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Filmionary también permite a los usuarios crear una lista de favoritos y ver los detalles de las películas y series de televisión, como el reparto, la trama, las críticas, el año de lanzamiento, etc. La aplicación utiliza tecnologías como React, Styled Components y React Responsive Carousel para crear una interfaz de usuario atractiva y fácil de usar.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Despliegue de la app
 
-### `npm test`
+La aplicación se encuentra desplegada en Amazon Web Services y se puede acceder a ella a través del siguiente enlace: [Filmionary](https://master.dqyldpe3e1z95.amplifyapp.com/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tecnologías utilizadas
 
-### `npm run build`
+<a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="36" height="36" /> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="36" height="36" /> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="36" height="36" /> </a> <a href="https://styled-components.com/" target="_blank" rel="noreferrer"> <img src="https://styled-components.com/logo.png" alt="styled-component" width="36" height="36" /> </a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Cómo utilizar Filionary
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Para utilizar Filmionary, primero debes clonar el repositorio en tu máquina local. Puedes hacerlo con el siguiente comando:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone https://github.com/amarmor878/filmionary.git
+```
+Una vez que tengas el repositorio en tu máquina local, debes instalar las dependencias con:
 
-### `npm run eject`
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Luego, puedes iniciar la aplicación con:
+```bash
+npm start
+```
+Después de que la aplicación se inicie, podrás utilizarla en tu navegador web. Asegúrate de tener una conexión a Internet activa.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Capturas de la App
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Aquí te mostramos algunas capturas de pantalla de la aplicación:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<img src="https://user-images.githubusercontent.com/100948149/223593435-ade3d2cd-14ff-4d38-9384-f029ddc261cc.png" alt="captura 1" width="600" height="281"/><img src="https://user-images.githubusercontent.com/100948149/223593547-39c9ad8e-5495-4ee4-ae1b-b2d8d72b6f55.png" alt="captura 2" width="600" height="281"/><img src="https://user-images.githubusercontent.com/100948149/223593676-14ac6f5f-47c6-443e-b770-26695b9585af.png" alt="captura 3" width="600" height="281"/>
 
-## Learn More
+## Bibliografía
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Documentación oficial de React: [https://reactjs.org/docs/getting-started.html](https://reactjs.org/docs/getting-started.html)
+- Documentación oficial de styled-components: [https://styled-components.com/docs](https://styled-components.com/docs)
+- Documentacion oficial de css grid: [https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout)
+- Documentación oficial de flexbox: [https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
+- Documentación oficial de react responsive carousel: [https://www.npmjs.com/package/react-responsive-carousel](https://www.npmjs.com/package/react-responsive-carousel)
+- Documentación oficial de react-icons: [https://react-icons.github.io/react-icons](https://react-icons.github.io/react-icons)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Derechos de autor
 
-### Code Splitting
+Copyright © 2023
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Esta aplicación es gratuita y se proporciona "tal cual", sin garantía de ningún tipo, expresa o implícita, incluidas, entre otras, las garantías de comerciabilidad, idoneidad para un propósito particular y no infracción. En ningún caso los autores serán responsables de reclamaciones, daños u otras responsabilidades, ya sea en una acción de contrato, agravio o de otra manera, derivadas de, fuera de o en conexión con la aplicación o el uso u otros tratos en la aplicación. Se permite la distribución y modificación de esta aplicación siempre y cuando se atribuya correctamente a los autores originales.

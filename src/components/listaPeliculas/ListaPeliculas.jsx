@@ -8,13 +8,13 @@ import { ListaPeliMain, ListaPeliTarj, ListaPeliTitulo } from './ListaPeliculasS
 export const ListaPeliculas = () => {
 
   const [listaPelicula, setListaPelicula] = useState([])
-  const { tipo } = useParams()
+  const { type } = useParams()
 
   const getData = useCallback(() => {
-    axios.get(`https://api.themoviedb.org/3/movie/${tipo ? tipo : "popular"}?api_key=4e44d9029b1270a757cddc766a1bcb63&language=es-ES`)
+    axios.get(`https://api.themoviedb.org/3/movie/${type ? type : "popular"}?api_key=4e44d9029b1270a757cddc766a1bcb63&language=es-ES`)
       .then(response => setListaPelicula(response.data.results))
       .catch(error => console.log(error))
-  }, [tipo])
+  }, [type])
 
   useEffect(() => {
     getData()
@@ -22,13 +22,13 @@ export const ListaPeliculas = () => {
 
   useEffect(() => {
     getData()
-  }, [getData, tipo])
+  }, [getData, type])
 
   return (
     <div>
       <ListaPeliMain>
         <ListaPeliTitulo>
-          {(tipo ? tipo : "POPULARES").toUpperCase()}
+          {(type ? type : "POPULAR").toUpperCase()}
         </ListaPeliTitulo>
         <ListaPeliTarj>
           {

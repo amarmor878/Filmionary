@@ -13,10 +13,10 @@ export const Cabecera = () => {
                 <Link to='/peliculas/popular' style={{ textDecoration: 'none' }}>
                     <EnlCabecera><span>Popular</span></EnlCabecera>
                 </Link>
-                <Link to='/peliculas/mejor_valorado' style={{ textDecoration: 'none' }}>
+                <Link to='/peliculas/top_rated' style={{ textDecoration: 'none' }}>
                     <EnlCabecera><span>Mejor Valorado</span></EnlCabecera>
                 </Link>
-                <Link to='/peliculas/estreno' style={{ textDecoration: 'none' }}>
+                <Link to='/peliculas/upcoming' style={{ textDecoration: 'none' }}>
                     <EnlCabecera><span>Estreno</span></EnlCabecera>
                 </Link>
             </IzqCabecera>

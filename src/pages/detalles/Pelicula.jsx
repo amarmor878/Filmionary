@@ -9,7 +9,7 @@ import {
     DetaInfoDer, DetaCont, DetaTitulo, DetaTag, DetaRate,
     DetaPuntu, DetaEje, DetaFecha, DetaGeneros, DetaGeneroSpan,
     DetaBotom, DetaSinop, DetaLinks, DetaCabeInfo, DetaInfoProd,
-    DetaProd, DetaProdImg
+    DetaProd, DetaProdImg, DetaSinopInfo
 } from './PeliculaStyled'
 
 export const Pelicula = () => {
@@ -65,8 +65,8 @@ export const Pelicula = () => {
                             </DetaGeneros>
                         </DetaCont>
                         <DetaBotom>
-                            <DetaSinop>Sinopsis</DetaSinop>
-                            <div>{detallePelicula ? detallePelicula.overview : ""}</div>
+                            <DetaSinop>Sinopsis: </DetaSinop>
+                            <DetaSinopInfo>{detallePelicula ? detallePelicula.overview : ""}</DetaSinopInfo>
                         </DetaBotom>
                     </DetaInfoDer>
                 </DetaPeli>

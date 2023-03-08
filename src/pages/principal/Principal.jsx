@@ -38,7 +38,7 @@ export const Principal = () => {
             >
                 {
                     pelisPopulares.map(peli => (
-                        <Link style={{ textDecoration: "none", color: "white" }} to={`/pelicula/${peli.id}`} >
+                        <Link style={{ textDecoration: "none", color: "white" }} to={`/peliculas/${peli.id}`} >
                             <PrinPostImg>
                                 <img src={`https://image.tmdb.org/t/p/original${peli.backdrop_path}`} alt={peli.title} />
                             </PrinPostImg>

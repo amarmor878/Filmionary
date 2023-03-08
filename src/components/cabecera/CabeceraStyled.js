@@ -80,7 +80,7 @@ export const InputBusqueda = styled.input`
   }
 `;
 
-export const ButtonBusqueda = styled.button`
+export const BotonBusqueda = styled.button`
   padding: 5px;
   border: none;
   border-radius: 5px;

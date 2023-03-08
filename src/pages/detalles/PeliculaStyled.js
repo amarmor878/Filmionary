@@ -82,6 +82,18 @@ export const DetaTitulo = styled.div`
   font-weight: 600;
   font-size: 3rem;
   margin-bottom: 1.25rem;
+
+  @media (max-width: 1170px) {
+    font-size: 2rem;
+  }
+
+  @media (max-width: 1010px) {
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 978px) {
+    font-size: 1rem;
+  }
 `;
 
 export const DetaTag = styled.div`
@@ -154,24 +166,44 @@ export const DetaGeneroSpan = styled.span`
   border: 2px solid white;
   border-radius: 20px;
   margin-right: 1rem;
-  margin-bottom: 1rem;
 `;
 
 export const DetaBotom = styled.div`
-  margin: 2rem 0;
-  flex: 0.8;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 `;
 
 export const DetaSinop = styled.div`
   font-size: 1.5rem;
   margin-bottom: 1.25rem;
   font-weight: 600;
-  display: flex;
-  position: relative;
-  align-items: center;
+  margin-top: -0.3rem;
+`;
 
-  div:last-of-type {
-    margin-left: auto;
+export const DetaSinopInfo = styled.div`
+  font-weight: 400;
+  margin-bottom: 1.25rem;
+  margin-left: 1rem;
+
+  @media (max-width: 1170px) {
+    margin-left: 1rem;
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: 1080px) {
+    margin-left: 1rem;
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: 978px) {
+    margin-left: 1rem;
+    font-size: 0.7rem;
+  }
+
+  @media (max-width: 880px) {
+    margin-left: 1rem;
+    font-size: 0.6rem;
   }
 `;
 

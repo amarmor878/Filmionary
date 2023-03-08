@@ -6,7 +6,7 @@
 1. ¿Qué es Filmionary?
 2. Despliegue de la app
 3. Tecnologías utilizadas
-4. Cómo utilizar Purrfect Planner
+4. Cómo utilizar Filmionary
 5. Capturas de la App
 6. Bibliografía
 7. Derechos de autor
